@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Product Details</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Product Details</h1>
+
+</header>
+
+<div id="productDetails"></div>
+
+<script src="js/products.js"></script>
+
+</body>
+</html>
