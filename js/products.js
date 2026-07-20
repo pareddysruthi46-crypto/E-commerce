@@ -16,7 +16,7 @@ fetch(API)
 
         <div class="card">
 
-            <img src="image/${product.image}" width="200">
+            <img src="images/${product.image}" width="200">
 
             <h3>${product.name}</h3>
 
