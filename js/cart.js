@@ -30,18 +30,18 @@ const cartDiv = document.getElementById("cartItems");
 let total = 0;
 
 cart.forEach(id => {
-  const p = products.find(x => x.id === id);
+    const p = products.find(x => x.id === id);
 
-  if (p) {
-    total += p.price;
+    if (p) {
+        total += p.price;
 
-    cartDiv.innerHTML += `
-    <div class="card">
-    <h3>${p.name}</h3>
-    <p>Price : ₹${p.price}</p>
-  </div>
-`;
-  }
+        cartDiv.innerHTML += `
+        <div class="card">
+            <h3>${p.name}</h3>
+            <p>Price : ₹${p.price}</p>
+        </div>
+        `;
+    }
 });
 
 document.getElementById("total").innerHTML = "Total : ₹" + total;
