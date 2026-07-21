@@ -36,12 +36,11 @@ cart.forEach(id => {
     total += p.price;
 
     cartDiv.innerHTML += `
-      <div class="card">
-        <img src="images/${p.image}" width="150">
-        <h3>${p.name}</h3>
-        <p>₹${p.price}</p>
-      </div>
-    `;
+    <div class="card">
+    <h3>${p.name}</h3>
+    <p>Price : ₹${p.price}</p>
+  </div>
+`;
   }
 });
 
