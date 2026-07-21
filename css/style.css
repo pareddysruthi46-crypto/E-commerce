@@ -91,7 +91,7 @@ footer{
     display:flex;
     flex-direction:column;
     gap:20px;
-    /*padding:20px;*/
+    padding:0;
 }
 
 #cartItems .card{
