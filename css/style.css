@@ -1,31 +1,133 @@
-#cartItems{
+*{
+    margin:0;
     padding:0;
-    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-#cartItems .card{
-    background:#fff;
-    border-radius:0;
-    box-shadow:none;
-    border-bottom:1px solid #ddd;
-    padding:12px 0;
-    margin:0;
-    text-align:center;
+body{
+    background:#f4f4f4;
 }
 
-#cartItems .card h3{
-    margin:0;
+/* Header */
+
+header{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
     font-size:18px;
 }
 
-#cartItems .card p{
-    margin:2px 0 0 0;
-    font-size:16px;
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:80px;
+    background:#2196f3;
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:white;
+    color:#2196f3;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Products Page */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+}
+
+.card h3{
+    margin-top:10px;
+}
+
+.card p{
+    margin-top:10px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#2196f3;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#0b7dda;
+}
+
+/* Cart Page */
+
+#cartItems{
+    width:100%;
+    padding:0;
+}
+
+#cartItems .card{
+    width:100%;
+    margin:0;
+    padding:20px;
+    border-radius:0;
+    box-shadow:none;
+    border-bottom:1px solid #ddd;
+    background:white;
+}
+
+#cartItems .card h3{
+    margin-bottom:5px;
 }
 
 #total{
-    margin:10px 0 0 0;
-    padding-left:0;
     font-size:20px;
     font-weight:bold;
+    padding:20px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+    margin-top:50px;
 }
